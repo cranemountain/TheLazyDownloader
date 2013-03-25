@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteRule ^download/iphone/(.+)$      torrents/iphone.php?token=$1
+RewriteRule ^download                   torrents/index.php
+<Files ~ "\.(inc)$">
+  order allow,deny
+  deny from all
+</Files>
