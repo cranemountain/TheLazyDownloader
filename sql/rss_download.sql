@@ -1,6 +1,5 @@
 /*
-SQLyog Community v11.01 (64 bit)
-MySQL - 5.1.67-0ubuntu0.11.10.1 : Database - rss_download
+Database - rss_download
 *********************************************************************
 */
 
