@@ -51,7 +51,7 @@ foreach($sabnzbd_xml->slots->slot as $sabnzbdinfo) {
 */
 //purge torrents
 mysqli_query($mysqli, "DELETE FROM transmission");
-$transmission_xml = simplexml_load_string(get_data("http://dl.helror.se/torrents/api.php?action=get_tm_data&key=$system_api_key"));
+$transmission_xml = simplexml_load_string(get_data("http://localhost/torrents/api.php?action=get_tm_data&key=$system_api_key"));
 foreach($transmission_xml->Items->item as $transmissioninfo) {
     $id = $transmissioninfo->id;
     $title = $transmissioninfo->title;
